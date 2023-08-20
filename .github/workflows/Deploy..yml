@@ -35,9 +35,12 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
 
-    # Gradle build (Test 제외)
+    - name: init with Gradle
+      uses: gradle/gradle-build-action@v2
+
 
     - name: Build with Gradle
-      uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
+      uses: gradle/gradle-build-action@v2
       with:
-        arguments: clean build -x test
+              gradle-version: 8.1.1
+              arguments: build
