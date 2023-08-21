@@ -35,6 +35,9 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
 
+    - name: Load application.yml
+      run: echo "$SPRING_CONFIG" > application.yml
+
     - name: init with Gradle
       uses: gradle/gradle-build-action@v2
     - run: gradle init
