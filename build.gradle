@@ -3,7 +3,9 @@ plugins {
 	id 'org.springframework.boot' version '2.7.13'
 	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
 }
-
+bootJar {
+	enabled = false
+}
 group = 'com.echo'
 version = '0.0.1-SNAPSHOT'
 
