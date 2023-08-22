@@ -1,9 +1,9 @@
 HELP.md
-server/.gradle
-build/
-!../gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Gradle Wrapper files
+!gradle/wrapper/gradle-wrapper.jar
+!/gradlew
+!/gradlew.bat
+
 
 ### YAML files ###
 *.yml
