@@ -35,9 +35,13 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
 
-    - name: Load application.yml
-      run: echo "$SPRING_CONFIG" > application.yml
-
+     # 환경 변수 설정
+    - name: Set environment values
+      run: |
+              cd ./src/main/resources
+              touch ./env.properties
+              echo "${{ secrets.ENV }}" > ./env.properties
+            shell: bash
 
      # Gradle build (Test 제외)
     - name: Build with Gradle
