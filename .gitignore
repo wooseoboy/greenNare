@@ -36,8 +36,7 @@ out/
 /nbdist/
 /.nb-gradle/
 
-### Include build folder ###
-build/
+
 
 ### VS Code ###
 .vscode/
