@@ -67,7 +67,7 @@ jobs:
         envs: GITHUB_SHA
         script: |
           sudo docker pull todnsp/greenare:${GITHUB_SHA::7}
-          sudo docker tag todnsp/greennare:${GITHUB_SHA::7} greenNare_spring
+          sudo docker tag todnsp/greennare:${GITHUB_SHA::7} greennare_spring
           sudo docker-compose up -d
               
               
