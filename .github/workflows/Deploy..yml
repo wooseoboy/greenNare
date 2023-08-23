@@ -49,7 +49,6 @@ jobs:
               gradle-version: 8.1.1
               arguments: clean build -x test
 
-
       # Docker build
     - name: Docker build
       run: |
