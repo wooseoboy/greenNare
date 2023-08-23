@@ -38,6 +38,7 @@ jobs:
      # 환경 변수 설정
     - name: make application.yml
       run: |
+       mkdir .server/src/main/resources
        cd ./server/src/main/resources  
        touch ./application.yml 
        echo "${{ secrets.ENV}}" > ./application.yml
