@@ -56,7 +56,7 @@ jobs:
         docker tag greennare todnsp/greennare:${{ github.sha }}
         docker push todnsp/greennare:${{ github.sha }}        
         
-        		# Deploy
+      # Deploy
     - name: Deploy
       uses: appleboy/ssh-action@master
       with:
