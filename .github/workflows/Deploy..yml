@@ -36,6 +36,7 @@ jobs:
         distribution: 'temurin'
 
      # 환경 변수 설정
+    - name: make application.yml
       run: |
        mkdir ./src/main/resources # resources 폴더 생성
        cd ./src/main/resources # resources 폴더로 이동
