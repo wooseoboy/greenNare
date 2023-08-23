@@ -55,7 +55,6 @@ jobs:
         docker build -t greennare .
         docker tag greennare todnsp/greennare:${GITHUB_SHA::7}
         docker push todnsp/greennare:${GITHUB_SHA::7}        
-        
 
       # Deploy
     - name: Deploy
